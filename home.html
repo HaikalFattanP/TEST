@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>MusicFest | AFESTA VOL 4</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Spline+Sans:wght@400;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+<header class="navbar">
+    <nav class="nav-container">
+        <div class="nav-logo">AFESTA 4</div>
+        <div class="nav-links">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="main.html">Main Content</a>
+            <a class="nav-link" href="aboutus.html">About Us</a>
+        </div>
+        <button class="menu-toggle" id="menu-open">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </nav>
+</header>
+
+<div class="mobile-menu hidden" id="mobile-menu">
+    <button class="menu-close" id="menu-close">
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <nav class="mobile-nav-links">
+        <a href="#">Home</a>
+        <a href="#lineup">Main Content</a>
+        <a href="#about">About Us</a>
+    </nav>
+    <div class="mobile-decor">
+        <div class="dot dot-primary"></div>
+        <div class="dot dot-secondary"></div>
+        <div class="dot dot-tertiary"></div>
+    </div>
+</div>
+
+<main>
+    <section class="hero-section">
+        <div class="hero-bg">
+            <img alt="Music Festival Atmosphere" src="img/hero-festival.jpg">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="decor-icon float-1">
+            <span class="material-symbols-outlined text-primary">music_note</span>
+        </div>
+        <div class="decor-icon float-2">
+            <span class="material-symbols-outlined text-secondary">piano</span>
+        </div>
+        <div class="decor-icon float-3">
+            <span class="material-symbols-outlined text-tertiary">equalizer</span>
+        </div>
+        
+        <div class="hero-content-wrapper">
+            <div class="hero-card">
+                <span class="subtitle">SMA NEGERI 1 BANJAR Presents</span>
+                <h1 class="main-title">AFESTA <span class="text-secondary italic">4</span></h1>
+                <p class="hero-desc">The ultimate school music festival. Experience raw talent, vibrant energy, and a community like no other. AFESTA 4 is here to redefine your sonic landscape.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Registrasi</a>
+                    <button class="btn btn-outline" id="watch-teaser">
+                        <span class="material-symbols-outlined">play_circle</span>Tonton Teaser
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-low" id="lineup">
+        <div class="section-max-width">
+            <div class="section-header">
+                <div class="divider bg-primary"></div>
+                <h2 class="section-title">The Lineup</h2>
+                <p class="section-desc">A celebration of student musical talent and creative community.</p>
+            </div>
+            
+            <div class="lineup-grid">
+                <div class="card border-primary card-wide">
+                    <div class="card-img-wrapper" href="#">
+                        <img alt="Bazzar" src="PHOTO/TRY.png">
+                    </div>
+                    <p class="card-tag text-primary" href="#">KELAS XI</p>
+                    <h3 class="card-title" href="#" >BAZZAR</h3>
+                    <p class="card-text">Smooth harmonies and heartfelt lyrics to start the night.</p>
+                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
+                </div>
+                <div class="card border-secondary card-wide">
+                    <div class="card-img-wrapper">
+                        <img alt="Fashion Show" src="img/lineup-fashion.jpg">
+                    </div>
+                    <p class="card-tag text-secondary">KELAS X</p>
+                    <h3 class="card-title">FASHION SHOW</h3>
+                    <p class="card-text">High-energy performance with electrifying guitar riffs.</p>
+                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
+                </div>
+                <div class="card border-tertiary">
+                    <div class="card-img-wrapper">
+                        <img alt="Music Band" src="img/lineup-band.jpg">
+                    </div>
+                    <p class="card-tag text-tertiary">KELAS X & XI</p>
+                    <h3 class="card-title">MUSIC BAND</h3>
+                    <p class="card-text">Intricate rhythms and soulful brass for a sophisticated vibe.</p>
+                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
+                </div>
+                <div class="card border-secondary">
+                    <div class="card-img-wrapper">
+                        <img alt="Pasalas" src="img/lineup-pasalas.jpg">
+                    </div>
+                    <p class="card-tag text-secondary">KELAS X & XI</p>
+                    <h3 class="card-title">PASALAS</h3>
+                    <p class="card-text">Pulsating beats and retro-futuristic synths that will keep you moving.</p>
+                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
+                </div>
+                <div class="card border-primary">
+                    <div class="card-img-wrapper">
+                        <img alt="Smansaban Idol" src="img/lineup-idol.jpg">
+                    </div>
+                    <p class="card-tag text-primary">KELAS X & XI</p>
+                    <h3 class="card-title">SMANSABAN IDOL</h3>
+                    <p class="card-text">Powerful riffs and thunderous drums for a high-intensity finale.</p>
+                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-surface" id="leadership">
+        <div class="section-max-width">
+            <div class="section-header">
+                <div class="divider bg-secondary"></div>
+                <h2 class="section-title">Festival Leadership</h2>
+                <p class="section-desc">The minds driving the rhythm of our event.</p>
+            </div>
+            
+            <div class="leadership-flex">
+                <div class="card bg-container border-primary card-profile">
+                    <div class="card-img-profile">
+                        <img alt="Drs. Bambang Sukarsono" src="PHOTO/PA_BAMBANG.png">
+                    </div>
+                    <p class="card-tag text-primary">Principal</p>
+                    <h3 class="card-title-profile">Drs. Bambang Sukarsono, M.Pd</h3>
+                    <p class="card-text-profile">Guiding our academic and creative mission with wisdom and decades of dedicated leadership.</p>
+                </div>
+                <div class="card bg-container border-primary card-profile">
+                    <div class="card-img-profile">
+                        <img alt="Abdus Sodik" src="PHOTO/PA_ABDUS.jpg">
+                    </div>
+                    <p class="card-tag text-secondary">Vice Principal</p>
+                    <h3 class="card-title-profile">Abdus Sodik, S.Pd</h3>
+                    <p class="card-text-profile">Championing student development and operational excellence for every festival activity.</p>
+                </div>
+            </div>
+
+            <div class="osis-wrapper">
+                <div class="section-header">
+                    <h3 class="section-subtitle">The OSIS Crew</h3>
+                    <p class="section-desc">The leadership team driving the pulse of AFESTA.</p>
+                </div>
+                
+                <div class="osis-container">
+                    <div class="osis-top-row">
+                        <div class="card bg-container border-primary card-profile">
+                            <div class="card-img-profile">
+                                <img alt="Desik Ransyah Sebastian" src="PHOTO/TRY.png">
+                            </div>
+                            <p class="card-tag text-primary">KETUA PELAKSANA</p>
+                            <h3 class="card-title-profile">Desik Ransyah Sebastian</h3>
+                        </div>
+                        <div class="card bg-container border-primary card-profile">
+                            <div class="card-img-profile">
+                                <img alt="Dika Choerul Ikhsan" src="PHOTO/TRY.png">
+                            </div>
+                            <p class="card-tag text-secondary">WAKIL KETUA PELAKSANA</p>
+                            <h3 class="card-title-profile">Dika Choerul Ikhsan</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="osis-bottom-grid">
+                        <div class="card bg-container border-primary card-profile">
+                            <div class="card-img-profile">
+                                <img alt="Riska Destriani Azahwa" src="PHOTO/TRY.png">
+                            </div>
+                            <p class="card-tag text-tertiary">BENDAHARA</p>
+                            <h4 class="card-name-bold">Riska Destriani Azahwa</h4>
+                        </div>
+                        <div class="card bg-container border-primary card-profile">
+                            <div class="card-img-profile">
+                                <img alt="Namira Putri Anjani" src="PHOTO/TRY.png">
+                            </div>
+                            <p class="card-tag text-primary">WAKIL BENDAHARA</p>
+                            <h4 class="card-name-bold">Namira Putri Anjani</h4>
+                        </div>
+                        <div class="card bg-container border-primary card-profile">
+                            <div class="card-img-profile">
+                                <img alt="Ghaisani Farah Maryam" src="PHOTO/TRY.png">
+                            </div>
+                            <p class="card-tag text-secondary">SEKRETARIS</p>
+                            <h4 class="card-name-bold">Ghaisani Farah Maryam</h4>
+                        </div>
+                        <div class="card bg-container border-primary card-profile">
+                            <div class="card-img-profile">
+                                <img alt="Syalwa Cahya Maulida" src="PHOTO/TRY.png">
+                            </div>
+                            <p class="card-tag text-tertiary">WAKIL SEKRETARIS</p>
+                            <h4 class="card-name-bold">Syalwa Cahya Maulida</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding section-max-width" id="media">
+        <div class="moments-grid">
+            <div class="video-container group">
+                <div class="video-card-frame">
+                    <img alt="Performance Highlight" src="img/lineup-bazzar.jpg">
+                    <div class="video-overlay-btn">
+                        <div class="play-btn-circle" id="play-teaser-btn">
+                            <span class="material-symbols-outlined fill-icon">play_arrow</span>
+                        </div>
+                    </div>
+                    <div class="video-tag-label">
+                        <p>OFFICIAL TEASER VOL 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="moments-text">
+                <h2 class="section-title-left">Captured <span class="text-secondary italic">Moments</span></h2>
+                <p class="hero-desc">A collection of the most electric performances and soul-stirring melodies from our previous volumes. Relive the magic as we prepare for our biggest edition yet.</p>
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-number text-primary">12+</span>
+                        <span class="stat-label">Guest Stars</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-box">
+                        <span class="stat-number text-secondary">5000+</span>
+                        <span class="stat-label">Attendees</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer" id="about">
+        <div class="footer-grid section-max-width">
+            <div class="footer-brand">
+                <div class="footer-logo">AFESTA VOL 4</div>
+                <p class="footer-text">A celebration of student musical talent and creative community. Join us in building a legacy of sound, art, and inspiration for the next generation.</p>
+                <div class="social-links">
+                    <a class="social-circle" href="#"><span class="material-symbols-outlined">share</span></a>
+                    <a class="social-circle" href="#"><span class="material-symbols-outlined">camera</span></a>
+                    <a class="social-circle" href="#"><span class="material-symbols-outlined">mail</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#media">Moments</a></li>
+                    <li><a href="#">Tickets</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Location</h4>
+                <p class="footer-text">Main Auditorium & <br>Great Lawn Campus</p>
+                <p class="date-highlight">JULY 24-26, 2026</p>
+            </div>
+        </div>
+        <div class="footer-bottom section-max-width">
+            <p class="copyright">© 2026 AFESTA. ALL BEATS RESERVED.</p>
+            <div class="footer-meta-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <span class="highlight-team">Shout out to the IT team</span>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
