@@ -1,293 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>MusicFest | AFESTA VOL 4</title>
+    <title>MusicFest - Main Content</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Spline+Sans:wght@400;700&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Spline+Sans:wght@400;600&family=Space+Grotesk:wght@600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles1.css">
 </head>
-<body class="dark-theme">
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
 
-<header class="navbar">
-    <nav class="nav-container">
-        <div class="nav-logo">AFESTA 4</div>
-        <div class="nav-links">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="main.html">Main Content</a>
-            <a class="nav-link" href="aboutus.html">About Us</a>
-        </div>
-        <button class="menu-toggle" id="menu-open">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
-    </nav>
-</header>
+    <header class="bg-background sticky top-0 z-50">
+        <nav class="flex items-center px-lg py-md w-full max-w-container-max mx-auto gap-xl justify-between">
+            <div class="text-h3 font-h1 text-primary italic bold tracking-tighter hover:scale-105 transition-transform duration-200 cursor-pointer">
+                AFESTA 4
+            </div>
+            <div class="hidden md:flex items-center gap-lg">
+                <a class="font-label-caps text-label-caps text-on-surface/80 hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="font-label-caps text-label-caps text-on-surface border-b-2 border-primary pb-1" href="main.html">Main Content</a>
+                <a class="font-label-caps text-label-caps text-on-surface/80 hover:text-primary transition-colors" href="aboutus.html">About Us</a>
+            </div>
+        </nav>
+    </header>
 
-<div class="mobile-menu hidden" id="mobile-menu">
-    <button class="menu-close" id="menu-close">
-        <span class="material-symbols-outlined">close</span>
-    </button>
-    <nav class="mobile-nav-links">
-        <a href="#">Home</a>
-        <a href="#lineup">Main Content</a>
-        <a href="#about">About Us</a>
-    </nav>
-    <div class="mobile-decor">
-        <div class="dot dot-primary"></div>
-        <div class="dot dot-secondary"></div>
-        <div class="dot dot-tertiary"></div>
-    </div>
-</div>
-
-<main>
-    <section class="hero-section">
-        <div class="hero-bg">
-            <img alt="Music Festival Atmosphere" src="img/hero-festival.jpg">
-            <div class="hero-overlay"></div>
-        </div>
-        
-        <div class="decor-icon float-1">
-            <span class="material-symbols-outlined text-primary">music_note</span>
-        </div>
-        <div class="decor-icon float-2">
-            <span class="material-symbols-outlined text-secondary">piano</span>
-        </div>
-        <div class="decor-icon float-3">
-            <span class="material-symbols-outlined text-tertiary">equalizer</span>
-        </div>
-        
-        <div class="hero-content-wrapper">
-            <div class="hero-card">
-                <span class="subtitle">SMA NEGERI 1 BANJAR Presents</span>
-                <h1 class="main-title">AFESTA <span class="text-secondary italic">4</span></h1>
-                <p class="hero-desc">The ultimate school music festival. Experience raw talent, vibrant energy, and a community like no other. AFESTA 4 is here to redefine your sonic landscape.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Registrasi</a>
-                    <button class="btn btn-outline" id="watch-teaser">
-                        <span class="material-symbols-outlined">play_circle</span>Tonton Teaser
-                    </button>
+    <main>
+        <section class="relative overflow-hidden pt-xl pb-lg">
+            <div class="max-w-container-max mx-auto px-lg relative z-10 grid lg:grid-cols-2 gap-md items-center">
+                <div class="paper-cut-right bg-primary p-lg hard-shadow">
+                    <h1 class="font-h1 text-h1 text-on-primary mb-md leading-tight">
+                        AFESTA 4
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-primary/90 max-w-lg">
+                        Welcome to the heart of MusicFest. Dive deep into the organizational spirit, relive our greatest hits, and get a sneak peek at the sonic revolution coming your way.
+                    </p>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-secondary rotate-3 -z-10 paper-cut-left"></div>
+                    <img alt="A high-energy festival crowd at night" class="w-full h-[400px] object-cover hard-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgN05pyW079LyJFbCkEwL6Wl4O-fDunY_lKXy1LFdCe-qdtTSS1fWyVz74ppFjMCq7R8Tn9YrKjXLHk44NBe455ig9y-tcUT-9vVB8-wLqa-gyrFi1yhhtmIx3Wx7OI-8kOM9JJpbjYmAyDAUreZHLEDph2CUmTXXqhc6InyLWf_Pjy62DXT_yCm-LHmY0yF9micpc17PSdKHWzmsPEI0SYh7ZJU0xTh7rZ2SVwLmULhp-1i8EpwxlaA0cF_aSXzLdzE5drOsaZug">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section-padding bg-low" id="lineup">
-        <div class="section-max-width">
-            <div class="section-header">
-                <div class="divider bg-primary"></div>
-                <h2 class="section-title">The Lineup</h2>
-                <p class="section-desc">A celebration of student musical talent and creative community.</p>
-            </div>
-            
-            <div class="lineup-grid">
-                <div class="card border-primary card-wide">
-                    <div class="card-img-wrapper" href="#">
-                        <img alt="Bazzar" src="PHOTO/TRY.png">
-                    </div>
-                    <p class="card-tag text-primary" href="#">KELAS XI</p>
-                    <h3 class="card-title" href="#" >BAZZAR</h3>
-                    <p class="card-text">Smooth harmonies and heartfelt lyrics to start the night.</p>
-                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
+        <section class="py-xl bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-lg">
+                <div class="flex items-center gap-md mb-lg">
+                    <div class="h-1 w-24 bg-tertiary"></div>
+                    <h2 class="font-h2 text-h2 uppercase text-tertiary">Video Teaser</h2>
                 </div>
-                <div class="card border-secondary card-wide">
-                    <div class="card-img-wrapper">
-                        <img alt="Fashion Show" src="img/lineup-fashion.jpg">
+                <div class="relative aspect-video bg-black overflow-hidden hard-shadow group">
+                    <img alt="DJ controller close-up" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-e6b9F5LBKJNi5-FvNEkncwX874v4eSJgn9xkq0fva5_vT4WL1pZVSEcria4Zgv2133UrT3IKr0bYlykXopDjALdCuOMjj_iJ5rLP_UbKzrvUydh33qpw0kyZwT5ifwDS_q5jBdd1LtokKTWYZJzG5AXtt74FvOr1QpxVUxH6BGuFbjCCpHdz5wJpH0O0WESw90dYa2oLuMP2fzEKvBzjOPCga1dPsF1ISr_nBPFeENHjEgynBtmveo7YzpMxatSIW2Zyl1uuKoW3">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="w-24 h-24 bg-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform active:scale-90">
+                            <span class="material-symbols-outlined text-on-primary text-[48px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                        </button>
                     </div>
-                    <p class="card-tag text-secondary">KELAS X</p>
-                    <h3 class="card-title">FASHION SHOW</h3>
-                    <p class="card-text">High-energy performance with electrifying guitar riffs.</p>
-                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
-                </div>
-                <div class="card border-tertiary">
-                    <div class="card-img-wrapper">
-                        <img alt="Music Band" src="img/lineup-band.jpg">
-                    </div>
-                    <p class="card-tag text-tertiary">KELAS X & XI</p>
-                    <h3 class="card-title">MUSIC BAND</h3>
-                    <p class="card-text">Intricate rhythms and soulful brass for a sophisticated vibe.</p>
-                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
-                </div>
-                <div class="card border-secondary">
-                    <div class="card-img-wrapper">
-                        <img alt="Pasalas" src="img/lineup-pasalas.jpg">
-                    </div>
-                    <p class="card-tag text-secondary">KELAS X & XI</p>
-                    <h3 class="card-title">PASALAS</h3>
-                    <p class="card-text">Pulsating beats and retro-futuristic synths that will keep you moving.</p>
-                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
-                </div>
-                <div class="card border-primary">
-                    <div class="card-img-wrapper">
-                        <img alt="Smansaban Idol" src="img/lineup-idol.jpg">
-                    </div>
-                    <p class="card-tag text-primary">KELAS X & XI</p>
-                    <h3 class="card-title">SMANSABAN IDOL</h3>
-                    <p class="card-text">Powerful riffs and thunderous drums for a high-intensity finale.</p>
-                    <a href="#" class="card-link text-secondary">Lihat Detail →</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section-padding bg-surface" id="leadership">
-        <div class="section-max-width">
-            <div class="section-header">
-                <div class="divider bg-secondary"></div>
-                <h2 class="section-title">Festival Leadership</h2>
-                <p class="section-desc">The minds driving the rhythm of our event.</p>
-            </div>
-            
-            <div class="leadership-flex">
-                <div class="card bg-container border-primary card-profile">
-                    <div class="card-img-profile">
-                        <img alt="Drs. Bambang Sukarsono" src="PHOTO/PA_BAMBANG.png">
-                    </div>
-                    <p class="card-tag text-primary">Principal</p>
-                    <h3 class="card-title-profile">Drs. Bambang Sukarsono, M.Pd</h3>
-                    <p class="card-text-profile">Guiding our academic and creative mission with wisdom and decades of dedicated leadership.</p>
-                </div>
-                <div class="card bg-container border-primary card-profile">
-                    <div class="card-img-profile">
-                        <img alt="Abdus Sodik" src="PHOTO/PA_ABDUS.jpg">
-                    </div>
-                    <p class="card-tag text-secondary">Vice Principal</p>
-                    <h3 class="card-title-profile">Abdus Sodik, S.Pd</h3>
-                    <p class="card-text-profile">Championing student development and operational excellence for every festival activity.</p>
-                </div>
-            </div>
-
-            <div class="osis-wrapper">
-                <div class="section-header">
-                    <h3 class="section-subtitle">The OSIS Crew</h3>
-                    <p class="section-desc">The leadership team driving the pulse of AFESTA.</p>
+        <section class="py-xl bg-background">
+            <div class="max-w-container-max mx-auto px-lg">
+                <div class="text-center mb-xl">
+                    <h2 class="font-h2 text-h2 mb-sm uppercase">KETUA OSIS SMAN 1 BANJAR</h2>
+                    <div class="serrated-divider text-tertiary w-32 mx-auto"></div>
                 </div>
                 
-                <div class="osis-container">
-                    <div class="osis-top-row">
-                        <div class="card bg-container border-primary card-profile">
-                            <div class="card-img-profile">
-                                <img alt="Desik Ransyah Sebastian" src="PHOTO/TRY.png">
+                <div class="flex flex-col gap-lg">
+                    <div class="flex justify-center">
+                        <div class="flex flex-col md:flex-row gap-md items-center bg-surface-container-high p-lg hard-shadow max-w-2xl w-full">
+                            <img alt="Desik Ransyah S." class="w-56 h-56 object-cover paper-cut-right" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGAC3H2NGN0w58Z6z1MYNl6aTxip-gQtALSIDzChe1n1ePlGWq1B2zD5krv48zUkUN8iqg51QUPVVRUiz2EY-bO7tX89yLowtJ9CEo-OAF9lVorxPe2zWYtYEWCS32mH-bkmY960e1MfbqELQFy3EQ6_LRrFRnxPQ1rFSotFMjRvC-c4yUryHzaKJw4ioAw0_Gd7I0v6hs-qSXCKeM1VAH9FHQM5Qp63HyTGhM6H7O2NSGB0TQfDFU4ASMtYsUthD93a98AoyafdDd">
+                            <div>
+                                <span class="font-label-caps text-label-caps text-primary mb-xs block">KETUA PELAKSANA</span>
+                                <h3 class="font-h3 text-h3 mb-xs text-on-surface">Agist Audia Muharrom</h3>
+                                <p class="text-on-surface-variant italic">Visionary & Mastermind</p>
                             </div>
-                            <p class="card-tag text-primary">KETUA PELAKSANA</p>
-                            <h3 class="card-title-profile">Desik Ransyah Sebastian</h3>
-                        </div>
-                        <div class="card bg-container border-primary card-profile">
-                            <div class="card-img-profile">
-                                <img alt="Dika Choerul Ikhsan" src="PHOTO/TRY.png">
-                            </div>
-                            <p class="card-tag text-secondary">WAKIL KETUA PELAKSANA</p>
-                            <h3 class="card-title-profile">Dika Choerul Ikhsan</h3>
                         </div>
                     </div>
                     
-                    <div class="osis-bottom-grid">
-                        <div class="card bg-container border-primary card-profile">
-                            <div class="card-img-profile">
-                                <img alt="Riska Destriani Azahwa" src="PHOTO/TRY.png">
+                    <div class="grid md:grid-cols-2 gap-lg max-w-5xl mx-auto w-full">
+                        <div class="flex flex-col gap-md items-center bg-surface-container-high p-md hard-shadow text-center">
+                            <img alt="Dika Choerul I." class="w-40 h-40 object-cover paper-cut-left" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Rc8XWYihdwWa8hpWiReZdHo2ISGax4KCRjfOY8WnJQq-MRXnP_lJCqQ6yEvcD5K8dnYY99_061YUEr_XkhXDGyr5sjtMcYUe8JBeOqB0wZ0R7QRAWF0Dum0eO3du59c-yD_Xoq4G4457kylhPwS_HONfvAvhNMy9gvUG1gQvGD7Adt5eTvQeKuRSQ3LS4ONLvcve5ciV0vyNQDbnzucco2StbmvloGzaXnCoSC7YR4JXgZRqrYMHkcxxiyA1FDMsBWQH7be3bDWe">
+                            <div class="w-full">
+                                <span class="font-label-caps text-label-caps text-secondary mb-xs block">WAKIL KETUA PELAKSANA</span>
+                                <h3 class="font-h3 text-h3 mb-xs text-on-surface text-2xl">Edo Sormin</h3>
+                                <p class="text-on-surface-variant italic text-sm">Operations & Creative Lead</p>
                             </div>
-                            <p class="card-tag text-tertiary">BENDAHARA</p>
-                            <h4 class="card-name-bold">Riska Destriani Azahwa</h4>
                         </div>
-                        <div class="card bg-container border-primary card-profile">
-                            <div class="card-img-profile">
-                                <img alt="Namira Putri Anjani" src="PHOTO/TRY.png">
+                        <div class="flex flex-col gap-md items-center bg-surface-container-high p-md hard-shadow text-center">
+                            <img alt="Siti Aminah" class="w-40 h-40 object-cover paper-cut-right" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq0pwPPrgVWsRR7DH9V2VeSTCjYny2jtF4VnVD1aWknDwa9_tFdOz8D-loeOp4270ysDdlkWTVBTZQyxgaCrUGig77ZUPNkI5hbwsEaV6w757DREpNlFBYBevZyafjaWmIQ1jqpxJD4zd3ko9svAMpWsdt2d79an8LcogHjpGYt6ZKJ0iGGfJt_cY_-0CxDExfkzmvORdpmBgFiu2vuEu5y49YRCmj_8uN43tXSS3vBoYsjBAJ2mvstR_sJ2ojQj8UjrLO5JRLenuk">
+                            <div class="w-full">
+                                <span class="font-label-caps text-label-caps text-tertiary mb-xs block">SEKRETARIS UMUM</span>
+                                <h3 class="font-h3 text-h3 mb-xs text-on-surface text-2xl">Qiara Tio Natalie Pangaribuan</h3>
+                                <p class="text-on-surface-variant italic text-sm">Organized & Detail-Oriented</p>
                             </div>
-                            <p class="card-tag text-primary">WAKIL BENDAHARA</p>
-                            <h4 class="card-name-bold">Namira Putri Anjani</h4>
-                        </div>
-                        <div class="card bg-container border-primary card-profile">
-                            <div class="card-img-profile">
-                                <img alt="Ghaisani Farah Maryam" src="PHOTO/TRY.png">
-                            </div>
-                            <p class="card-tag text-secondary">SEKRETARIS</p>
-                            <h4 class="card-name-bold">Ghaisani Farah Maryam</h4>
-                        </div>
-                        <div class="card bg-container border-primary card-profile">
-                            <div class="card-img-profile">
-                                <img alt="Syalwa Cahya Maulida" src="PHOTO/TRY.png">
-                            </div>
-                            <p class="card-tag text-tertiary">WAKIL SEKRETARIS</p>
-                            <h4 class="card-name-bold">Syalwa Cahya Maulida</h4>
                         </div>
                     </div>
                 </div>
+
+                <div class="mt-xl">
+                    <h3 class="font-h1 text-h2 mb-lg text-center">Meet OSIS</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-gutter">
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">shield_person</span></div>
+                            <span class="font-label-caps text-label-caps text-tertiary">Sekbid 1</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Religious</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-primary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[40px]">gavel</span></div>
+                            <span class="font-label-caps text-label-caps text-primary">Sekbid 2</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Discipline</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-secondary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[40px]">flag</span></div>
+                            <span class="font-label-caps text-label-caps text-secondary">Sekbid 3</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Patriotism</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">school</span></div>
+                            <span class="font-label-caps text-label-caps text-tertiary">Sekbid 4</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Academic</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-primary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[40px]">public</span></div>
+                            <span class="font-label-caps text-label-caps text-primary">Sekbid 5</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Democracy</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-secondary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[40px]">inventory_2</span></div>
+                            <span class="font-label-caps text-label-caps text-secondary">Sekbid 6</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Enterprise</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">fitness_center</span></div>
+                            <span class="font-label-caps text-label-caps text-tertiary">Sekbid 7</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Sports</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-primary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[40px]">palette</span></div>
+                            <span class="font-label-caps text-label-caps text-primary">Sekbid 8</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Arts</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-secondary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[40px]">computer</span></div>
+                            <span class="font-label-caps text-label-caps text-secondary">Sekbid 9</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Technology</p>
+                        </div>
+                        <div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform">
+                            <div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">translate</span></div>
+                            <span class="font-label-caps text-label-caps text-tertiary">Sekbid 10</span>
+                            <p class="font-h3 text-body-lg text-on-surface font-bold">Language</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-xl bg-surface-container-lowest relative overflow-hidden">
+            <div class="max-w-container-max mx-auto px-lg relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-xl gap-md">
+                    <div>
+                        <h2 class="font-h2 text-h1 text-secondary uppercase">AFESTA 4</h2>
+                    </div>
+                    <div class="flex gap-sm">
+                        <button aria-label="Previous Slide" class="p-sm border-2 border-tertiary text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all active:scale-95 cursor-pointer flex items-center justify-center" id="carousel-prev">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+                        <button aria-label="Next Slide" class="p-sm border-2 border-tertiary text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all active:scale-95 cursor-pointer flex items-center justify-center" id="carousel-next">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex gap-md overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory pb-md cursor-grab active:cursor-grabbing" id="carousel-container">
+                    <div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md">
+                        <div class="paper-cut-right overflow-hidden hard-shadow aspect-[4/3]">
+                            <img alt="Neon Nights Performers" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNsKSGIyvdp5N9YdzOGZfnHiaOM2RuySnrzenAyBtqaia_bYYrwGf89ZKHNWyalRULlzwWXb8_75aAG4LZqhyER3u-p8WiN-H16mg9Y-6qmjFIzvs9IEaCjKNy7caO6U5Cu99tGH_YH19RJqv5XgLp7yrbYhafKCKMTSnXnC6GuioZGnpbBF5CGAJP1fi3N4b0H9lqn8hD9jV8aYFWIST8mZuAttEhyyB0_kUdSauNSRqtXYk0Zxih0Uk3aiuD9rD1PeD89QVazrRe">
+                        </div>
+                        <div class="p-md bg-secondary text-on-secondary hard-shadow-sm">
+                            <h4 class="font-h3 text-body-lg font-bold">Neon Nights</h4>
+                            <p class="text-sm">Main Stage, Day 2</p>
+                        </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md md:mt-12">
+                        <div class="paper-cut-left overflow-hidden hard-shadow aspect-[4/3]">
+                            <img alt="Unity Circle Celebration" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJGdqh0enUaf3n5gS2sBe3vIlKB5bOun0bc3QEqqJljnPBVVZRJlhFvbOxFX5xTQrK1ccglUEq93zjdYm3eoJ3gLiWVGuvr56tveOxyJLv9MAEDKj6iIJjrxmDudV6D2_w6L8N3sM7UrI7tCnJgHB-xqc4fDeXSS6Ux4Y_aaWB-Hic8FVvxsMH-S4eEwfBK5wklLTDTyTEv96sNddFWEvEI9_G54_Gn3VgfsCsloYO9f3XAM885T1umS7DBAEIo4ETRrMbycGDrJPU">
+                        </div>
+                        <div class="p-md bg-primary text-on-primary hard-shadow-sm">
+                            <h4 class="font-h3 text-body-lg font-bold">Unity Circle</h4>
+                            <p class="text-sm">Art Village, Day 1</p>
+                        </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md">
+                        <div class="paper-cut-right overflow-hidden hard-shadow aspect-[4/3]">
+                            <img alt="Dawn Chorus Campsite" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD14Ofi6A0opyFTMFjTYbH1U2cGrhMoiTAZEU5YqEw-fMz4U9jKOA9S8l8sX5obn6qCmI0OZAClLCgGpXgxy-Md6ddx2z5rN4FjWE3LxqbqZamujYQ3-UIAWPxBOlz3Ee7Rp6yKWJGEHiLqzOFxW9RoGwtNkdZdglQ6ETcOEANUCobzlsKuXzIXJSF1NwRat-oJExJL7F7X8ZKuEdufoVG-I1oXooyL59RMO7pie-5HJOUfxXOA_LF64CQUktXrI7oHDlYzFpRlq0zM">
+                        </div>
+                        <div class="p-md bg-tertiary text-on-tertiary hard-shadow-sm">
+                            <h4 class="font-h3 text-body-lg font-bold">Dawn Chorus</h4>
+                            <p class="text-sm">Eco-Campsite, Day 3</p>
+                        </div>
+                    </div>
+                    <div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md md:mt-12">
+                        <div class="paper-cut-left overflow-hidden hard-shadow aspect-[4/3]">
+                            <img alt="Crowd Energy" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgN05pyW079LyJFbCkEwL6Wl4O-fDunY_lKXy1LFdCe-qdtTSS1fWyVz74ppFjMCq7R8Tn9YrKjXLHk44NBe455ig9y-tcUT-9vVB8-wLqa-gyrFi1yhhtmIx3Wx7OI-8kOM9JJpbjYmAyDAUreZHLEDph2CUmTXXqhc6InyLWf_Pjy62DXT_yCm-LHmY0yF9micpc17PSdKHWzmsPEI0SYh7ZJU0xTh7rZ2SVwLmULhp-1i8EpwxlaA0cF_aSXzLdzE5drOsaZug">
+                        </div>
+                        <div class="p-md bg-secondary text-on-secondary hard-shadow-sm">
+                            <h4 class="font-h3 text-body-lg font-bold">Pulse of the Crowd</h4>
+                            <p class="text-sm">After Party, Day 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="py-xl bg-surface-container-low">
+        <div class="max-w-container-max mx-auto px-lg text-center">
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">
+                Don't miss your chance to be part of the most electric event of the year. Whether you're a soloist or a band, the stage is waiting for your unique sound.
+            </p>
+            <a class="inline-flex items-center gap-sm px-xl py-md bg-secondary text-on-secondary font-label-caps text-label-caps hard-shadow hover:-translate-y-1 hover:brightness-110 transition-all active:scale-95 group" href="#">
+                <span>Register Now</span>
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+            <div class="mt-xl">
+                <div class="serrated-divider text-tertiary w-64 mx-auto opacity-30"></div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding section-max-width" id="media">
-        <div class="moments-grid">
-            <div class="video-container group">
-                <div class="video-card-frame">
-                    <img alt="Performance Highlight" src="img/lineup-bazzar.jpg">
-                    <div class="video-overlay-btn">
-                        <div class="play-btn-circle" id="play-teaser-btn">
-                            <span class="material-symbols-outlined fill-icon">play_arrow</span>
-                        </div>
-                    </div>
-                    <div class="video-tag-label">
-                        <p>OFFICIAL TEASER VOL 4</p>
-                    </div>
-                </div>
+    <footer class="bg-surface border-t-2 border-dashed border-outline/30 text-on-surface">
+        <div class="flex flex-col md:flex-row justify-between items-center px-lg py-xl w-full max-w-container-max mx-auto gap-md">
+            <div class="flex flex-col gap-xs text-center md:text-left">
+                <div class="font-h3 text-h3 text-primary italic bold tracking-tighter">AFESTA 4</div>
+                <p class="font-body-md text-on-surface/60">© 2026 AFESTA.</p>
             </div>
-            <div class="moments-text">
-                <h2 class="section-title-left">Captured <span class="text-secondary italic">Moments</span></h2>
-                <p class="hero-desc">A collection of the most electric performances and soul-stirring melodies from our previous volumes. Relive the magic as we prepare for our biggest edition yet.</p>
-                <div class="stats-row">
-                    <div class="stat-box">
-                        <span class="stat-number text-primary">12+</span>
-                        <span class="stat-label">Guest Stars</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-box">
-                        <span class="stat-number text-secondary">5000+</span>
-                        <span class="stat-label">Attendees</span>
-                    </div>
-                </div>
+            <div class="flex gap-lg items-center">
+                <a class="font-label-caps text-label-caps text-on-surface/70 hover:text-primary transition-colors" href="#">Instagram</a>
+                <a class="font-label-caps text-label-caps text-on-surface/70 hover:text-primary transition-colors" href="#">Twitter</a>
+                <a class="font-label-caps text-label-caps text-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
             </div>
-        </div>
-    </section>
-
-    <footer class="main-footer" id="about">
-        <div class="footer-grid section-max-width">
-            <div class="footer-brand">
-                <div class="footer-logo">AFESTA VOL 4</div>
-                <p class="footer-text">A celebration of student musical talent and creative community. Join us in building a legacy of sound, art, and inspiration for the next generation.</p>
-                <div class="social-links">
-                    <a class="social-circle" href="#"><span class="material-symbols-outlined">share</span></a>
-                    <a class="social-circle" href="#"><span class="material-symbols-outlined">camera</span></a>
-                    <a class="social-circle" href="#"><span class="material-symbols-outlined">mail</span></a>
-                </div>
-            </div>
-            <div>
-                <h4 class="footer-heading">Navigation</h4>
-                <ul class="footer-links-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
-                    <li><a href="#media">Moments</a></li>
-                    <li><a href="#">Tickets</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="footer-heading">Location</h4>
-                <p class="footer-text">Main Auditorium & <br>Great Lawn Campus</p>
-                <p class="date-highlight">JULY 24-26, 2026</p>
-            </div>
-        </div>
-        <div class="footer-bottom section-max-width">
-            <p class="copyright">© 2026 AFESTA. ALL BEATS RESERVED.</p>
-            <div class="footer-meta-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <span class="highlight-team">Shout out to the IT team</span>
+            <div class="flex gap-md">
+                <a class="w-10 h-10 flex items-center justify-center bg-surface-container-high border border-outline/20 text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-md" href="#"><span class="material-symbols-outlined">share</span></a>
+                <a class="w-10 h-10 flex items-center justify-center bg-surface-container-high border border-outline/20 text-on-surface hover:bg-secondary hover:text-on-secondary transition-all shadow-md" href="#"><span class="material-symbols-outlined">podcasts</span></a>
             </div>
         </div>
     </footer>
-</main>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
