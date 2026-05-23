@@ -1,210 +1,200 @@
 <!DOCTYPE html>
-<html class="dark" lang="en" data-stitch-anim-opacity="true">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>About Us | MusicFest</title>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&family=Space+Grotesk:wght@600&family=Spline+Sans:wght@400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&family=Space+Grotesk:wght@600&family=Spline+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     
-    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
-    <!-- Tailwind Configuration -->
-    <script src="tailwind-config.js"></script>
 </head>
-<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container-alt selection:text-white">
-    <!-- TopNavBar -->
-    <nav class="sticky top-0 z-50 bg-surface border-b-2 border-outline-variant shadow-[0px_4px_0px_0px_#173d3c]">
-        <div class="flex justify-between items-center w-full px-gutter py-sm max-w-container-max mx-auto">
-            <div class="font-h3 text-h3 font-black italic tracking-tighter mr-md text-primary-container">AFESTA VOL 4</div>
-            <div class="flex items-center gap-lg">
-                <div class="hidden md:flex gap-lg items-center">
-                    <a class="text-on-surface font-label-caps hover:text-primary-container transition-all" href="home.html">Home</a>
-                    <a class="text-on-surface font-label-caps hover:text-primary-container transition-all" href="main.html">Main Content</a>
-                    <a class="text-secondary-container-alt font-bold border-b-4 border-secondary-container-alt pb-1" href="aboutus.html">About Us</a>
-                </div>
-                <div class="md:hidden">
-                    <span class="material-symbols-outlined text-on-surface">menu</span>
-                </div>
-            </div>
+<body class="dark-theme">
+
+<header class="navbar">
+    <nav class="nav-container">
+        <div class="nav-logo">AFESTA 4</div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="main.html">Main Content</a>
+            <a class="nav-link active" href="about.html">About Us</a>
         </div>
+        <button class="menu-toggle" id="menu-open">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
     </nav>
-    <main>
-        <!-- Hero Section -->
-        <section class="relative min-h-[600px] flex items-center pt-xl bg-surface-container-lowest">
-            <div class="absolute inset-0 z-0 opacity-40">
-                <div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 via-transparent to-secondary-container-alt/20"></div>
-                <img class="w-full h-full object-cover grayscale brightness-50" alt="A wide-angle shot of a vibrant, high-energy outdoor music festival at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz98gdvO_GX55SOSK_UTRs-RJsoGYHL9BKu9HXmLzdWNQYfQIG8KvkCgBU-a98zmRFMiCeiydc0WUx0m1FVK3RcQ3e7GksQBv2N2OisHDyeozO8PiNz8b3fZUGW0P9edGxblo3mB-dLWDxg6JVLwJ098LQNiEo26BN_lJTj93QaOxJuG4nr0qvyjDI8wtOw8C0iYo7HgQlSGb5rFEh-kansXpSlg9Up9tXY8PB4xdqNfaP-_1SiOR00ZmGjhEnNJUbOdSIxAnWkALd">
-            </div>
-            <!-- Paper-cut Overlays -->
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container/10 skew-x-12 translate-x-24 z-10"></div>
-            <div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-secondary-container-alt/10 -skew-x-12 -translate-x-12 z-10"></div>
-            <div class="relative z-20 max-w-container-max mx-auto px-gutter w-full">
-                <div class="max-w-3xl">
-                    <h1 class="font-h1 text-h1 mb-md text-on-surface uppercase tracking-tighter">
-                        ABOUT <span class="text-primary-container">AFESTA VOL 4</span>
-                    </h1>
-                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-lg border-l-4 border-secondary-container-alt pl-md">
-                        Celebrating a decade of student artistry. MusicFest is more than a concert; it’s a collision of raw energy, creative rebellion, and the purest expression of sound crafted by the next generation of performers.
-                    </p>
-                </div>
-            </div>
-        </section>
+</header>
+
+<div class="mobile-menu hidden" id="mobile-menu">
+    <button class="menu-close" id="menu-close">
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <nav class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#lineup">Main Content</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</div>
+
+<main>
+    <section class="about-hero">
+        <div class="hero-bg">
+            <img alt="Vibrant outdoor music festival" src="img/hero-festival.jpg">
+            <div class="hero-overlay-gradient"></div>
+        </div>
         
-        <!-- Our Story (The Evolution) -->
-        <section class="py-xl max-w-container-max mx-auto px-gutter">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
-                <div class="md:col-span-5 space-y-md">
-                    <h2 class="font-h2 text-h2 uppercase tracking-tight">The <span class="text-secondary-container-alt">Evolution</span></h2>
-                    <p class="text-on-surface-variant font-body-md">
-                        In 2014, three students with a beat-up amp and a dream started what would become the school's biggest annual event. From a garage gathering to a main-stage spectacle, MusicFest has grown into a decade-long legacy.
-                    </p>
-                    <div class="space-y-sm border-t-2 border-outline-variant pt-md mt-lg">
-                        <div class="flex items-center gap-md">
-                            <span class="font-h3 text-h3 text-primary-container">2024</span>
-                            <span class="font-body-md italic text-on-surface">The Underground Genesis</span>
-                        </div>
-                        <div class="flex items-center gap-md">
-                            <span class="font-h3 text-h3 text-secondary-container-alt">2025</span>
-                            <span class="font-body-md italic text-on-surface">Breaking the Sound Barrier</span>
-                        </div>
-                        <div class="flex items-center gap-md">
-                            <span class="font-h3 text-h3 text-tertiary-container">2026</span>
-                            <span class="font-body-md italic text-on-surface">A Decade of Noise</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:col-span-7 relative">
-                    <div class="relative z-10 paper-cut-jagged bg-surface-container-high p-4 paper-cut-shadow-lg rotate-2">
-                        <img class="w-full h-[500px] object-cover grayscale contrast-125" alt="High-contrast black and white band performance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg2YsvqisgHlbTxx1m-4FDd9RpmDy6xyMFltfjZK4Ql0AZH4U_MzhHDt9NbRFgltvSHBtFuSqopMxawztETAFvAzIlTzvtwI443aaE8tX834p0EsVXDNAQ_rbnrg3RvK16ubOusW1tLCDoxBHloEoWIQ5NkGI0FUKThOjBd9fMoVfp_xDUUjTI7DYCprcktIpZzlTHM6F0Mm9vOGy-p-AGsggnpsIgMNYrnll4ChjQhA2AyLUbRNyAe5VH-embVsXDHGgSW4mxh-i_">
-                    </div>
-                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-primary-container z-0 paper-cut-edge -rotate-12"></div>
-                    <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-secondary-container-alt z-0 paper-cut-edge rotate-12 opacity-50"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Values -->
-        <section class="py-xl bg-surface-container-low">
-            <div class="max-w-container-max mx-auto px-gutter">
-                <div class="text-center mb-xl">
-                    <h2 class="font-h2 text-h2 uppercase mb-xs">What We <span class="text-primary-container">Stand For</span></h2>
-                    <div class="h-1 w-24 bg-primary-container mx-auto"></div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
-                    <!-- Value Card 1 -->
-                    <div class="bg-surface p-lg paper-cut-shadow border-t-8 border-primary-container group hover:-translate-y-2 transition-all duration-300">
-                        <span class="material-symbols-outlined text-primary-container text-[48px] mb-md">palette</span>
-                        <h3 class="font-h3 text-h3 mb-sm uppercase">Creativity</h3>
-                        <p class="text-on-surface-variant font-body-md leading-relaxed">
-                            Unleashing the raw artistic potential of every student. We believe the classroom is just the beginning of the masterpiece.
-                        </p>
-                    </div>
-                    <!-- Value Card 2 -->
-                    <div class="bg-surface p-lg paper-cut-shadow border-t-8 border-secondary-container-alt group hover:-translate-y-2 transition-all duration-300">
-                        <span class="material-symbols-outlined text-secondary-container-alt text-[48px] mb-md">groups</span>
-                        <h3 class="font-h3 text-h3 mb-sm uppercase">Collaboration</h3>
-                        <p class="text-on-surface-variant font-body-md leading-relaxed">
-                            Bridging genres and grades. Music is better together, fostering connections that shatter the usual social boundaries.
-                        </p>
-                    </div>
-                    <!-- Value Card 3 -->
-                    <div class="bg-surface p-lg paper-cut-shadow border-t-8 border-tertiary-container group hover:-translate-y-2 transition-all duration-300">
-                        <span class="material-symbols-outlined text-tertiary-container text-[48px] mb-md">stadium</span>
-                        <h3 class="font-h3 text-h3 mb-sm uppercase">Community</h3>
-                        <p class="text-on-surface-variant font-body-md leading-relaxed">
-                            Building a legacy of school spirit that extends far beyond the final encore. MusicFest belongs to everyone.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Impact Stats -->
-        <section class="py-xl bg-surface">
-            <div class="max-w-container-max mx-auto px-gutter">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
-                    <div class="text-center p-md border-r-2 border-outline-variant md:last:border-none">
-                        <div class="font-h1 text-h1 text-primary-container tracking-tighter">10+</div>
-                        <div class="font-label-caps uppercase text-on-surface-variant">Years of Jamming</div>
-                    </div>
-                    <div class="text-center p-md border-r-2 border-outline-variant md:last:border-none">
-                        <div class="font-h1 text-h1 text-secondary-container-alt tracking-tighter">50+</div>
-                        <div class="font-label-caps uppercase text-on-surface-variant">Performers Yearly</div>
-                    </div>
-                    <div class="text-center p-md border-r-2 border-outline-variant md:last:border-none">
-                        <div class="font-h1 text-h1 text-tertiary-container tracking-tighter">500+</div>
-                        <div class="font-label-caps uppercase text-on-surface-variant">Attendees</div>
-                    </div>
-                    <div class="text-center p-md border-r-2 border-outline-variant md:last:border-none">
-                        <div class="font-h1 text-h1 text-primary-container tracking-tighter">1k+</div>
-                        <div class="font-label-caps uppercase text-on-surface-variant">Pizzas Served</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Rooted in Pride -->
-        <section class="py-xl overflow-hidden relative">
-            <div class="max-w-container-max mx-auto px-gutter">
-                <div class="bg-surface-container-highest p-lg md:p-xl paper-cut-edge paper-cut-shadow border-l-8 border-tertiary-container relative z-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
-                        <div>
-                            <h2 class="font-h2 text-h2 uppercase mb-md tracking-tighter">Rooted in <span class="text-tertiary-container">Pride</span></h2>
-                            <p class="text-on-surface-variant font-body-lg mb-lg">
-                                MusicFest is proud to be a student-led initiative supported by the academic pillars of our institution. Together, we amplify the voices that matter.
-                            </p>
-                            <div class="flex items-center gap-sm">
-                                <span class="material-symbols-outlined text-primary-container">verified</span>
-                                <span class="font-label-caps text-on-surface uppercase tracking-widest">Official Partnership</span>
-                            </div>
-                        </div>
-                        <div class="flex flex-col md:flex-row gap-lg items-center justify-center">
-                            <div class="w-48 h-48 bg-background flex items-center justify-center paper-cut-shadow border-2 border-tertiary-container group hover:scale-105 transition-transform">
-                                <span class="font-h3 text-h3 text-tertiary-container text-center px-sm">BPI OSIS</span>
-                            </div>
-                            <div class="text-center md:text-left">
-                                <div class="font-h3 text-h3 text-on-surface">School Board</div>
-                                <div class="font-body-md text-on-surface-variant">Patron of the Arts</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Background Decorative Element -->
-            <div class="absolute top-1/2 right-0 w-1/2 h-full bg-secondary-container-alt/5 -skew-y-6 z-0"></div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="mt-xl bg-surface-dim border-t-4 border-dashed border-primary">
-        <div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-md max-w-container-max mx-auto gap-md">
-            <div class="flex flex-col gap-xs items-center md:items-start">
-                <div class="font-h3 text-h3 font-black text-primary italic">MusicFest</div>
-                <p class="font-body-md text-on-surface-variant">© 2024 MusicFest. Shout out to the IT team.</p>
-            </div>
-            <div class="flex gap-md">
-                <a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors" href="#">Instagram</a>
-                <a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors" href="#">Twitter</a>
-                <a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors" href="#">Contact</a>
-            </div>
-            <div class="flex gap-sm">
-                <a class="w-10 h-10 flex items-center justify-center bg-surface-container paper-cut-shadow hover:scale-95 transition-transform text-primary" href="#">
-                    <span class="material-symbols-outlined">brand_awareness</span>
-                </a>
-                <a class="w-10 h-10 flex items-center justify-center bg-surface-container paper-cut-shadow hover:scale-95 transition-transform text-primary" href="#">
-                    <span class="material-symbols-outlined">share</span>
-                </a>
-                <a class="w-10 h-10 flex items-center justify-center bg-surface-container paper-cut-shadow hover:scale-95 transition-transform text-primary" href="#">
-                    <span class="material-symbols-outlined">alternate_email</span>
-                </a>
+        <div class="decor-shape shape-right"></div>
+        <div class="decor-shape shape-left"></div>
+        
+        <div class="section-max-width px-gutter relative-z">
+            <div class="about-hero-content">
+                <h1 class="main-title">ABOUT <span class="text-primary">AFESTA VOL 4</span></h1>
+                <p class="hero-desc-l-border">
+                    Celebrating a decade of student artistry. MusicFest is more than a concert; it’s a collision of raw energy, creative rebellion, and the purest expression of sound crafted by the next generation of performers.
+                </p>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <section class="section-padding section-max-width px-gutter">
+        <div class="evolution-grid">
+            <div class="evolution-text">
+                <h2 class="section-title-left">The <span class="text-secondary">Evolution</span></h2>
+                <p class="section-desc-left">
+                    In 2014, three students with a beat-up amp and a dream started what would become the school's biggest annual event. From a garage gathering to a main-stage spectacle, MusicFest has grown into a decade-long legacy.
+                </p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <span class="timeline-year text-primary">2023</span>
+                        <span class="timeline-event">The First Note</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year text-primary">2024</span>
+                        <span class="timeline-event">The Underground Genesis</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year text-secondary">2025</span>
+                        <span class="timeline-event">Breaking the Sound Barrier</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year text-tertiary">2026</span>
+                        <span class="timeline-event">A Decade of Noise</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="evolution-media">
+                <div class="media-frame-rotate paper-cut-shadow-lg">
+                    <img alt="Black and white band performance" src="img/lineup-band.jpg">
+                </div>
+                <div class="decor-box box-top-left bg-primary"></div>
+                <div class="decor-box box-bottom-right bg-secondary"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-low">
+        <div class="section-max-width px-gutter">
+            <div class="section-header">
+                <h2 class="section-title">What We <span class="text-primary">Stand For</span></h2>
+                <div class="divider bg-primary"></div>
+            </div>
+            
+            <div class="values-grid">
+                <div class="card bg-surface border-primary paper-cut-shadow group-hover-up">
+                    <span class="material-symbols-outlined text-primary value-icon">palette</span>
+                    <h3 class="card-title">Creativity</h3>
+                    <p class="card-text">Unleashing the raw artistic potential of every student. We believe the classroom is just the beginning of the masterpiece.</p>
+                </div>
+                <div class="card bg-surface border-secondary paper-cut-shadow group-hover-up">
+                    <span class="material-symbols-outlined text-secondary value-icon">groups</span>
+                    <h3 class="card-title">Collaboration</h3>
+                    <p class="card-text">Bridging genres and grades. Music is better together, fostering connections that shatter the usual social boundaries.</p>
+                </div>
+                <div class="card bg-surface border-tertiary paper-cut-shadow group-hover-up">
+                    <span class="material-symbols-outlined text-tertiary value-icon">stadium</span>
+                    <h3 class="card-title">Community</h3>
+                    <p class="card-text">Building a legacy of school spirit that extends far beyond the final encore. MusicFest belongs to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-surface">
+        <div class="section-max-width px-gutter">
+            <div class="stats-counter-grid">
+                <div class="stat-counter-item">
+                    <div class="stat-large-num text-primary">10+</div>
+                    <div class="stat-caps-label">Years of Jamming</div>
+                </div>
+                <div class="stat-counter-item">
+                    <div class="stat-large-num text-secondary">50+</div>
+                    <div class="stat-caps-label">Performers Yearly</div>
+                </div>
+                <div class="stat-counter-item">
+                    <div class="stat-large-num text-tertiary">500+</div>
+                    <div class="stat-caps-label">Attendees</div>
+                </div>
+                <div class="stat-counter-item">
+                    <div class="stat-large-num text-primary">1k+</div>
+                    <div class="stat-caps-label">Pizzas Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding overflow-hidden position-relative">
+        <div class="section-max-width px-gutter">
+            <div class="pride-container bg-container border-l-tertiary paper-cut-shadow">
+                <div class="pride-grid">
+                    <div class="pride-info">
+                        <h2 class="section-title-left uppercase">Rooted in <span class="text-tertiary">Pride</span></h2>
+                        <p class="hero-desc-text">MusicFest is proud to be a student-led initiative supported by the academic pillars of our institution. Together, we amplify the voices that matter.</p>
+                        <div class="partnership-badge">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                            <span class="badge-text">Official Partnership</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pride-logos">
+                        <div class="logo-box paper-cut-shadow">
+                            <span class="logo-box-text text-tertiary">BPI OSIS</span>
+                        </div>
+                        <div class="board-text-wrapper">
+                            <div class="board-title">School Board</div>
+                            <div class="board-subtitle">Patron of the Arts</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slant-decor"></div>
+    </section>
+</main>
+
+<footer class="main-footer border-dashed-top">
+    <div class="footer-alt-flex section-max-width px-gutter">
+        <div class="footer-alt-brand">
+            <div class="footer-logo">AFESTA 4</div>
+            <p class="copyright">© 2026 AFESTA 4.</p>
+        </div>
+        
+        <div class="footer-alt-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <div class="footer-alt-socials">
+            <a class="social-box paper-cut-shadow text-primary" href="#"><span class="material-symbols-outlined">brand_awareness</span></a>
+            <a class="social-box paper-cut-shadow text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+            <a class="social-box paper-cut-shadow text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
