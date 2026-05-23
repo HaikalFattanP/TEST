@@ -1,0 +1,304 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MusicFest - Main Content</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Spline+Sans:wght@400;600&amp;family=Space+Grotesk:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#AE3708", // Rust
+                        "secondary": "#D904CB", // Magenta
+                        "tertiary": "#173D3C", // Teal
+                        "primary-container": "#AE3708",
+                        "secondary-container": "#D904CB",
+                        "tertiary-container": "#173D3C",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#ffffff",
+                        "on-secondary-container": "#ffffff",
+                        "on-tertiary-container": "#ffffff",
+                        "on-surface": "#e2e2e2",
+                        "on-surface-variant": "#dcc2af",
+                        "background": "#121414",
+                        "surface": "#121414",
+                        "surface-variant": "#333535",
+                        "surface-container": "#1e2020",
+                        "surface-container-low": "#1a1c1c",
+                        "surface-container-high": "#282a2b",
+                        "surface-container-highest": "#333535",
+                        "surface-container-lowest": "#0c0f0f",
+                        "outline": "#a48c7b",
+                        "inverse-surface": "#e2e2e2",
+                        "inverse-on-surface": "#2f3131",
+                        "inverse-primary": "#8f4d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Spline Sans"],
+                        "h3": ["Epilogue"],
+                        "label-caps": ["Space Grotesk"],
+                        "body-md": ["Spline Sans"],
+                        "h2": ["Epilogue"],
+                        "h1": ["Epilogue"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-caps": ["14px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h2": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "h1": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .paper-cut-right {
+            clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 98% 30%, 100% 45%, 96% 60%, 100% 75%, 97% 90%, 100% 100%, 0% 100%);
+        }
+        .paper-cut-left {
+            clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%, 3% 85%, 0% 70%, 4% 55%, 0% 40%, 3% 25%, 0% 10%);
+        }
+        .hard-shadow {
+            box-shadow: 8px 8px 0px 0px #173D3C;
+        }
+        .hard-shadow-sm {
+            box-shadow: 4px 4px 0px 0px #173D3C;
+        }
+        .serrated-divider {
+            height: 4px;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, currentColor 5px, currentColor 10px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="bg-background sticky top-0 z-50">
+<nav class="flex items-center px-lg py-md w-full max-w-container-max mx-auto gap-xl justify-between">
+<div class="text-h3 font-h1 text-primary italic bold tracking-tighter hover:scale-105 transition-transform duration-200 cursor-pointer">
+                AFESTA 4</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-label-caps text-label-caps text-on-surface/80 hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface border-b-2 border-primary pb-1" href="#">Main Content</a>
+<a class="font-label-caps text-label-caps text-on-surface/80 hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-xl pb-lg">
+<div class="max-w-container-max mx-auto px-lg relative z-10 grid lg:grid-cols-2 gap-md items-center">
+<div class="paper-cut-right bg-primary p-lg hard-shadow">
+<h1 class="font-h1 text-h1 text-on-primary mb-md leading-tight">
+                        AFESTA 4</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-lg">
+                        Welcome to the heart of MusicFest. Dive deep into the organizational spirit, relive our greatest hits, and get a sneak peek at the sonic revolution coming your way.
+                    </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary rotate-3 -z-10 paper-cut-left"></div>
+<img alt="A high-energy festival crowd at night" class="w-full h-[400px] object-cover hard-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgN05pyW079LyJFbCkEwL6Wl4O-fDunY_lKXy1LFdCe-qdtTSS1fWyVz74ppFjMCq7R8Tn9YrKjXLHk44NBe455ig9y-tcUT-9vVB8-wLqa-gyrFi1yhhtmIx3Wx7OI-8kOM9JJpbjYmAyDAUreZHLEDph2CUmTXXqhc6InyLWf_Pjy62DXT_yCm-LHmY0yF9micpc17PSdKHWzmsPEI0SYh7ZJU0xTh7rZ2SVwLmULhp-1i8EpwxlaA0cF_aSXzLdzE5drOsaZug">
+</div>
+</div>
+</section>
+<!-- Video Teaser Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-lg">
+<div class="flex items-center gap-md mb-lg">
+<div class="h-1 w-24 bg-tertiary"></div>
+<h2 class="font-h2 text-h2 uppercase text-tertiary">Video Teaser</h2>
+</div>
+<div class="relative aspect-video bg-black overflow-hidden hard-shadow group">
+<img alt="DJ controller close-up" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-e6b9F5LBKJNi5-FvNEkncwX874v4eSJgn9xkq0fva5_vT4WL1pZVSEcria4Zgv2133UrT3IKr0bYlykXopDjALdCuOMjj_iJ5rLP_UbKzrvUydh33qpw0kyZwT5ifwDS_q5jBdd1LtokKTWYZJzG5AXtt74FvOr1QpxVUxH6BGuFbjCCpHdz5wJpH0O0WESw90dYa2oLuMP2fzEKvBzjOPCga1dPsF1ISr_nBPFeENHjEgynBtmveo7YzpMxatSIW2Zyl1uuKoW3">
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-24 h-24 bg-primary rounded-full flex items-center justify-center hover:scale-110 transition-transform active:scale-90">
+<span class="material-symbols-outlined text-on-primary text-[48px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Festival Leadership Section -->
+<section class="py-xl bg-background">
+<div class="max-w-container-max mx-auto px-lg"><div class="text-center mb-xl"><h2 class="font-h2 text-h2 mb-sm uppercase">KETUA OSIS SMAN 1 BANJAR</h2><div class="serrated-divider text-tertiary w-32 mx-auto"></div></div><div class="flex flex-col gap-lg"><div class="flex justify-center"><div class="flex flex-col md:flex-row gap-md items-center bg-surface-container-high p-lg hard-shadow max-w-2xl w-full"><img alt="Desik Ransyah S." class="w-56 h-56 object-cover paper-cut-right" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGAC3H2NGN0w58Z6z1MYNl6aTxip-gQtALSIDzChe1n1ePlGWq1B2zD5krv48zUkUN8iqg51QUPVVRUiz2EY-bO7tX89yLowtJ9CEo-OAF9lVorxPe2zWYtYEWCS32mH-bkmY960e1MfbqELQFy3EQ6_LRrFRnxPQ1rFSotFMjRvC-c4yUryHzaKJw4ioAw0_Gd7I0v6hs-qSXCKeM1VAH9FHQM5Qp63HyTGhM6H7O2NSGB0TQfDFU4ASMtYsUthD93a98AoyafdDd"><div><span class="font-label-caps text-label-caps text-primary mb-xs block">KETUA PELAKSANA</span><h3 class="font-h3 text-h3 mb-xs text-on-surface">Agist Audia Muharrom</h3><p class="text-on-surface-variant italic">Visionary &amp; Mastermind</p></div></div></div><div class="grid md:grid-cols-2 gap-lg max-w-5xl mx-auto w-full"><div class="flex flex-col gap-md items-center bg-surface-container-high p-md hard-shadow text-center"><img alt="Dika Choerul I." class="w-40 h-40 object-cover paper-cut-left" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Rc8XWYihdwWa8hpWiReZdHo2ISGax4KCRjfOY8WnJQq-MRXnP_lJCqQ6yEvcD5K8dnYY99_061YUEr_XkhXDGyr5sjtMcYUe8JBeOqB0wZ0R7QRAWF0Dum0eO3du59c-yD_Xoq4G4457kylhPwS_HONfvAvhNMy9gvUG1gQvGD7Adt5eTvQeKuRSQ3LS4ONLvcve5ciV0vyNQDbnzucco2StbmvloGzaXnCoSC7YR4JXgZRqrYMHkcxxiyA1FDMsBWQH7be3bDWe"><div class="w-full"><span class="font-label-caps text-label-caps text-secondary mb-xs block">WAKIL KETUA PELAKSANA</span><h3 class="font-h3 text-h3 mb-xs text-on-surface text-2xl">Edo Sormin</h3><p class="text-on-surface-variant italic text-sm">Operations &amp; Creative Lead</p></div></div><div class="flex flex-col gap-md items-center bg-surface-container-high p-md hard-shadow text-center"><img alt="Siti Aminah" class="w-40 h-40 object-cover paper-cut-right" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq0pwPPrgVWsRR7DH9V2VeSTCjYny2jtF4VnVD1aWknDwa9_tFdOz8D-loeOp4270ysDdlkWTVBTZQyxgaCrUGig77ZUPNkI5hbwsEaV6w757DREpNlFBYBevZyafjaWmIQ1jqpxJD4zd3ko9svAMpWsdt2d79an8LcogHjpGYt6ZKJ0iGGfJt_cY_-0CxDExfkzmvORdpmBgFiu2vuEu5y49YRCmj_8uN43tXSS3vBoYsjBAJ2mvstR_sJ2ojQj8UjrLO5JRLenuk"><div class="w-full"><span class="font-label-caps text-label-caps text-tertiary mb-xs block">SEKRETARIS UMUM</span><h3 class="font-h3 text-h3 mb-xs text-on-surface text-2xl">Qiara Tio Natalie Pangaribuan</h3><p class="text-on-surface-variant italic text-sm">Organized &amp; Detail-Oriented</p></div></div></div></div><div class="mt-xl"><h3 class="font-h1 text-h2 mb-lg text-center">Meet OSIS</h3><div class="grid grid-cols-2 md:grid-cols-5 gap-gutter"><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">shield_person</span></div><span class="font-label-caps text-label-caps text-tertiary">Sekbid 1</span><p class="font-h3 text-body-lg text-on-surface font-bold">Religious</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-primary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[40px]">gavel</span></div><span class="font-label-caps text-label-caps text-primary">Sekbid 2</span><p class="font-h3 text-body-lg text-on-surface font-bold">Discipline</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-secondary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[40px]">flag</span></div><span class="font-label-caps text-label-caps text-secondary">Sekbid 3</span><p class="font-h3 text-body-lg text-on-surface font-bold">Patriotism</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">school</span></div><span class="font-label-caps text-label-caps text-tertiary">Sekbid 4</span><p class="font-h3 text-body-lg text-on-surface font-bold">Academic</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-primary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[40px]">public</span></div><span class="font-label-caps text-label-caps text-primary">Sekbid 5</span><p class="font-h3 text-body-lg text-on-surface font-bold">Democracy</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-secondary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[40px]">inventory_2</span></div><span class="font-label-caps text-label-caps text-secondary">Sekbid 6</span><p class="font-h3 text-body-lg text-on-surface font-bold">Enterprise</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">fitness_center</span></div><span class="font-label-caps text-label-caps text-tertiary">Sekbid 7</span><p class="font-h3 text-body-lg text-on-surface font-bold">Sports</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-primary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[40px]">palette</span></div><span class="font-label-caps text-label-caps text-primary">Sekbid 8</span><p class="font-h3 text-body-lg text-on-surface font-bold">Arts</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-secondary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[40px]">computer</span></div><span class="font-label-caps text-label-caps text-secondary">Sekbid 9</span><p class="font-h3 text-body-lg text-on-surface font-bold">Technology</p></div><div class="bg-surface-container p-sm hard-shadow-sm group hover:-translate-y-1 transition-transform"><div class="bg-tertiary h-32 mb-sm flex items-center justify-center"><span class="material-symbols-outlined text-on-tertiary text-[40px]">translate</span></div><span class="font-label-caps text-label-caps text-tertiary">Sekbid 10</span><p class="font-h3 text-body-lg text-on-surface font-bold">Language</p></div></div></div></div>
+</section>
+<!-- Moments from 2023 Gallery -->
+<section class="py-xl bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-lg relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-xl gap-md">
+<div>
+<h2 class="font-h2 text-h1 text-secondary uppercase">AFESTA 4</h2>
+</div>
+<div class="flex gap-sm">
+<button aria-label="Previous Slide" class="p-sm border-2 border-tertiary text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all active:scale-95 cursor-pointer flex items-center justify-center" id="carousel-prev">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button aria-label="Next Slide" class="p-sm border-2 border-tertiary text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all active:scale-95 cursor-pointer flex items-center justify-center" id="carousel-next">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-md overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory pb-md cursor-grab active:cursor-grabbing" id="carousel-container">
+<!-- Slide 1 -->
+<div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md">
+<div class="paper-cut-right overflow-hidden hard-shadow aspect-[4/3]">
+<img alt="Neon Nights Performers" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNsKSGIyvdp5N9YdzOGZfnHiaOM2RuySnrzenAyBtqaia_bYYrwGf89ZKHNWyalRULlzwWXb8_75aAG4LZqhyER3u-p8WiN-H16mg9Y-6qmjFIzvs9IEaCjKNy7caO6U5Cu99tGH_YH19RJqv5XgLp7yrbYhafKCKMTSnXnC6GuioZGnpbBF5CGAJP1fi3N4b0H9lqn8hD9jV8aYFWIST8mZuAttEhyyB0_kUdSauNSRqtXYk0Zxih0Uk3aiuD9rD1PeD89QVazrRe">
+</div>
+<div class="p-md bg-secondary text-on-secondary hard-shadow-sm">
+<h4 class="font-h3 text-body-lg font-bold">Neon Nights</h4>
+<p class="text-sm">Main Stage, Day 2</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md md:mt-12">
+<div class="paper-cut-left overflow-hidden hard-shadow aspect-[4/3]">
+<img alt="Unity Circle Celebration" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJGdqh0enUaf3n5gS2sBe3vIlKB5bOun0bc3QEqqJljnPBVVZRJlhFvbOxFX5xTQrK1ccglUEq93zjdYm3eoJ3gLiWVGuvr56tveOxyJLv9MAEDKj6iIJjrxmDudV6D2_w6L8N3sM7UrI7tCnJgHB-xqc4fDeXSS6Ux4Y_aaWB-Hic8FVvxsMH-S4eEwfBK5wklLTDTyTEv96sNddFWEvEI9_G54_Gn3VgfsCsloYO9f3XAM885T1umS7DBAEIo4ETRrMbycGDrJPU">
+</div>
+<div class="p-md bg-primary text-on-primary hard-shadow-sm">
+<h4 class="font-h3 text-body-lg font-bold">Unity Circle</h4>
+<p class="text-sm">Art Village, Day 1</p>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md">
+<div class="paper-cut-right overflow-hidden hard-shadow aspect-[4/3]">
+<img alt="Dawn Chorus Campsite" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD14Ofi6A0opyFTMFjTYbH1U2cGrhMoiTAZEU5YqEw-fMz4U9jKOA9S8l8sX5obn6qCmI0OZAClLCgGpXgxy-Md6ddx2z5rN4FjWE3LxqbqZamujYQ3-UIAWPxBOlz3Ee7Rp6yKWJGEHiLqzOFxW9RoGwtNkdZdglQ6ETcOEANUCobzlsKuXzIXJSF1NwRat-oJExJL7F7X8ZKuEdufoVG-I1oXooyL59RMO7pie-5HJOUfxXOA_LF64CQUktXrI7oHDlYzFpRlq0zM">
+</div>
+<div class="p-md bg-tertiary text-on-tertiary hard-shadow-sm">
+<h4 class="font-h3 text-body-lg font-bold">Dawn Chorus</h4>
+<p class="text-sm">Eco-Campsite, Day 3</p>
+</div>
+</div>
+<!-- Slide 4 -->
+<div class="min-w-[85%] md:min-w-[32%] snap-start space-y-md md:mt-12">
+<div class="paper-cut-left overflow-hidden hard-shadow aspect-[4/3]">
+<img alt="Crowd Energy" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGgN05pyW079LyJFbCkEwL6Wl4O-fDunY_lKXy1LFdCe-qdtTSS1fWyVz74ppFjMCq7R8Tn9YrKjXLHk44NBe455ig9y-tcUT-9vVB8-wLqa-gyrFi1yhhtmIx3Wx7OI-8kOM9JJpbjYmAyDAUreZHLEDph2CUmTXXqhc6InyLWf_Pjy62DXT_yCm-LHmY0yF9micpc17PSdKHWzmsPEI0SYh7ZJU0xTh7rZ2SVwLmULhp-1i8EpwxlaA0cF_aSXzLdzE5drOsaZug">
+</div>
+<div class="p-md bg-secondary text-on-secondary hard-shadow-sm">
+<h4 class="font-h3 text-body-lg font-bold">Pulse of the Crowd</h4>
+<p class="text-sm">After Party, Day 3</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-lg text-center">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">
+      Don't miss your chance to be part of the most electric event of the year. Whether you're a soloist or a band, the stage is waiting for your unique sound.
+    </p>
+<a class="inline-flex items-center gap-sm px-xl py-md bg-secondary text-on-secondary font-label-caps text-label-caps hard-shadow hover:-translate-y-1 hover:brightness-110 transition-all active:scale-95 group" href="#">
+<span class="">Register Now</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="mt-xl">
+<div class="serrated-divider text-tertiary w-64 mx-auto opacity-30"></div>
+</div>
+</div>
+</section>
+<footer class="bg-surface border-t-2 border-dashed border-outline/30 text-on-surface">
+<div class="flex flex-col md:flex-row justify-between items-center px-lg py-xl w-full max-w-container-max mx-auto gap-md">
+<div class="flex flex-col gap-xs text-center md:text-left">
+<div class="font-h3 text-h3 text-primary italic bold tracking-tighter">AFESTA&nbsp; 4</div>
+<p class="font-body-md text-on-surface/60">© 2026 AFESTA.</p>
+</div>
+<div class="flex gap-lg items-center">
+<a class="font-label-caps text-label-caps text-on-surface/70 hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-caps text-label-caps text-on-surface/70 hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="font-label-caps text-label-caps text-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-md">
+<a class="w-10 h-10 flex items-center justify-center bg-surface-container-high border border-outline/20 text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-md" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="w-10 h-10 flex items-center justify-center bg-surface-container-high border border-outline/20 text-on-surface hover:bg-secondary hover:text-on-secondary transition-all shadow-md" href="#"><span class="material-symbols-outlined">podcasts</span></a>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('carousel-container');
+            const nextBtn = document.getElementById('carousel-next');
+            const prevBtn = document.getElementById('carousel-prev');
+
+            const getScrollAmount = () => {
+                const firstChild = container.querySelector('div');
+                return firstChild ? firstChild.offsetWidth + 24 : 300; // child width + gap
+            };
+
+            if (nextBtn && prevBtn && container) {
+                nextBtn.addEventListener('click', () => {
+                    container.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    container.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+                });
+            }
+
+            // Optional: Drag to scroll functionality
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            container.addEventListener('mousedown', (e) => {
+                isDown = true;
+                container.classList.add('active');
+                startX = e.pageX - container.offsetLeft;
+                scrollLeft = container.scrollLeft;||
+            });
+            container.addEventListener('mouseleave', () => {
+                isDown = false;
+                container.classList.remove('active');
+            });
+            container.addEventListener('mouseup', () => {
+                isDown = false;
+                container.classList.remove('active');
+            });
+            container.addEventListener('mousemove', (e) => {
+                if(!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - container.offsetLeft;
+                const walk = (x - startX) * 2; 
+                container.scrollLeft = scrollLeft - walk;
+            });
+        });
+    </script>
+
+
+
+
+
+
+</body></html>
