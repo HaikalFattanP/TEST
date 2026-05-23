@@ -1,43 +1,132 @@
-.scrollbar-hide::-webkit-scrollbar {
+/* ==========================================================================
+   1. INJEKSI VARIABEL & CONFIG TAILWIND VIA CSS WRAPPER
+   ========================================================================== */
+@layer base {
+    :root {
+        /* Skema Warna Kustom AFESTA */
+        --primary: #AE3708;
+        --secondary: #D904CB;
+        --tertiary: #173D3C;
+        --primary-container: #AE3708;
+        --secondary-container: #D904CB;
+        --tertiary-container: #173D3C;
+        --on-primary: #ffffff;
+        --on-secondary: #ffffff;
+        --on-tertiary: #ffffff;
+        --on-primary-container: #ffffff;
+        --on-secondary-container: #ffffff;
+        --on-tertiary-container: #ffffff;
+        --on-surface: #e2e2e2;
+        --on-surface-variant: #dcc2af;
+        --background: #121414;
+        --surface: #121414;
+        --surface-variant: #333535;
+        --surface-container: #1e2020;
+        --surface-container-low: #1a1c1c;
+        --surface-container-high: #282a2b;
+        --surface-container-lowest: #0c0f0f;
+        --surface-container-highest: #333535;
+        --outline: #a48c7b;
+        --inverse-surface: #e2e2e2;
+        --inverse-on-surface: #2f3131;
+        --inverse-primary: #8f4d00;
+    }
+}
+
+/* Pemetaan Kelas Utilitas Kustom Tailwind */
+.bg-background { background-color: var(--background); }
+.text-on-background { color: var(--on-surface); }
+.bg-primary { background-color: var(--primary); }
+.text-on-primary { color: var(--on-primary); }
+.bg-secondary { background-color: var(--secondary); }
+.text-on-secondary { color: var(--on-secondary); }
+.bg-tertiary { background-color: var(--tertiary); }
+.text-on-tertiary { color: var(--on-tertiary); }
+.bg-surface-container { background-color: var(--surface-container); }
+.bg-surface-container-low { background-color: var(--surface-container-low); }
+.bg-surface-container-high { background-color: var(--surface-container-high); }
+.bg-surface-container-lowest { background-color: var(--surface-container-lowest); }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-tertiary { color: var(--tertiary); }
+.text-on-surface { color: var(--on-surface); }
+.text-on-surface-variant { color: var(--on-surface-variant); }
+.border-outline\/30 { border-color: rgba(164, 140, 123, 0.3); }
+.border-outline\/20 { border-color: rgba(164, 140, 123, 0.2); }
+.border-primary { border-color: var(--primary); }
+.border-tertiary { border-color: var(--tertiary); }
+
+/* Aturan Tipografi */
+.font-h1 { font-family: 'Epilogue', sans-serif; font-weight: 800; }
+.font-h2 { font-family: 'Epilogue', sans-serif; font-weight: 700; }
+.font-h3 { font-family: 'Epilogue', sans-serif; font-weight: 700; }
+.font-body-lg { font-family: 'Spline Sans', sans-serif; font-weight: 400; }
+.font-body-md { font-family: 'Spline Sans', sans-serif; font-weight: 400; }
+.font-label-caps { font-family: 'Space Grotesk', sans-serif; font-weight: 600; }
+
+.text-h1 { font-size: 64px; line-height: 1.1; letter-spacing: -0.04em; }
+.text-h2 { font-size: 48px; line-height: 1.2; letter-spacing: -0.02em; }
+.text-h3 { font-size: 32px; line-height: 1.2; }
+.text-body-lg { font-size: 18px; line-height: 1.6; }
+.text-body-md { font-size: 16px; line-height: 1.6; }
+.text-label-caps { font-size: 14px; line-height: 1; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* Aturan Jarak (Spacing) */
+.px-lg { padding-left: 48px; padding-right: 48px; }
+.py-lg { padding-top: 48px; padding-bottom: 48px; }
+.py-md { padding-top: 24px; padding-bottom: 24px; }
+.p-lg { padding: 48px; }
+.p-md { padding: 24px; }
+.p-sm { padding: 12px; }
+.py-xl { padding-top: 80px; padding-bottom: 80px; }
+.pt-xl { padding-top: 80px; }
+.pb-lg { padding-bottom: 48px; }
+.mb-md { margin-bottom: 24px; }
+.mb-lg { margin-bottom: 48px; }
+.mb-sm { margin-bottom: 12px; }
+.mb-xl { margin-bottom: 80px; }
+.mb-xs { margin-bottom: 4px; }
+.mt-xl { margin-top: 80px; }
+.gap-xl { gap: 80px; }
+.gap-lg { gap: 48px; }
+.gap-md { gap: 24px; }
+.gap-sm { gap: 12px; }
+.gap-gutter { gap: 24px; }
+.max-w-container-max { max-w: 1280px; }
+
+/* ==========================================================================
+   2. EFEK KUSTOM VISUAL (Paper-Cut, Hard-Shadow, Divider)
+   ========================================================================== */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.paper-cut-right {
+    clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 98% 30%, 100% 45%, 96% 60%, 100% 75%, 97% 90%, 100% 100%, 0% 100%);
+}
+
+.paper-cut-left {
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%, 3% 85%, 0% 70%, 4% 55%, 0% 40%, 3% 25%, 0% 10%);
+}
+
+.hard-shadow {
+    box-shadow: 8px 8px 0px 0px #173D3C;
+}
+
+.hard-shadow-sm {
+    box-shadow: 4px 4px 0px 0px #173D3C;
+}
+
+.serrated-divider {
+    height: 4px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, currentColor 5px, currentColor 10px);
+}
+
+/* Menyembunyikan scrollbar bawaan pada browser */
+.no-scrollbar::-webkit-scrollbar {
     display: none;
 }
-
-.scrollbar-hide {
+.no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(5deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
-
-.float-animation {
-    animation: float 6s ease-in-out infinite;
-}
-
-.paper-cut-shadow {
-    box-shadow: 12px 12px 0px 0px rgba(174, 55, 8, 0.2);
-}
-
-.lift-hover {
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.lift-hover:hover {
-    transform: translateY(-8px);
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #121414;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #AE3708;
-    border-radius: 10px;
 }
